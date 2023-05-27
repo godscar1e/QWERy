@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovation</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bg">
+            <header class="header">
+                <div class="header__container">
+                    <a class="header__logo" href="#">QWERy</a>
+                    <nav class="header__navigation">
+                        <ul class="header__menu">
+                            <li class="menu__item">
+                                <button class="menu__link" id="info" onclick="scrollDownInfo()">Information</button>
+                            </li>
+                            <li class="menu__item">
+                                <button class="menu__link" id="aboutus" onclick="scrollDownAboutUs()">About us</button>
+                            </li>
+                            <li class="menu__item">
+                                <button class="menu__link" id="culture-btn"
+                                    onclick="scrollDownCulture()">Culture</button>
+                            </li>
+                        </ul>
+                        <div class="header-hamburger__menu">
+                            <input class="burger-menu__toggle" id="burger-menu__toggle" type="checkbox" />
+                            <label class="burger-menu__btn" for="burger-menu__toggle">
+                                <span></span>
+                            </label>
+                            <div class="darkbg"></div>
+                            <ul class="header__burger-box">
+                                <div class="burger__search _icon-search">
+                                    <input type="text" placeholder="Search">
+                                    <img src="./images/icons/search-interface-symbol.png" alt="">
+                                </div>
+                                <li class="burger-menu__item">
+                                    <button class="burger-menu__link" id="info-burger"
+                                        onclick="scrollDownInfoBurger()">Information</button>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <button class="burger-menu__link" id="aboutus-burger"
+                                        onclick="scrollDownAboutUsBurger()">About
+                                        us</button>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <button class="burger-menu__link" id="culture-burger"
+                                        onclick="scrollDownCultureBurger()">Culture</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="header__search">
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main__container">
+                    <div class="main__page page">
+                        <div class="page__main-block">
+                            <div class="page__socials social">
+                                <p class="social__text">Follow us</p>
+                                <div class="social__networks">
+                                    <a href="https://www.instagram.com/"><img class="instagram"
+                                            src="./images/icons/instagram.svg" alt="">
+                                    </a>
+                                    <a href="https://twitter.com/"><img class="twitter" src="./images/icons/twitter.svg"
+                                            alt="">
+                                    </a>
+                                    <a href="https://www.instagram.com/"><img class="facebook"
+                                            src="./images/icons/facebook.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="page__body pagebody">
+                                <h3 class="pagebody__top-title top-title">explore the Nature Beauty</h3>
+                                <h1 class="pagebody__main-title title"><span>Discover</span><br> Wonderful Indonesia
+                                </h1>
+                            </div>
+                        </div>
+                        <button class="page__scrolldown" id="scrolldown" onclick="scrollDown()">Scroll down</button>
+                    </div>
+                    <div class="main__content content-block">
+                        <div class="content-block__container">
+                            <section class="content-block__holiday holiday" id="holiday">
+                                <img class="holiday__image" src="./images/holiday-img.svg" alt="">
+                                <div class="holiday__content holiday-content" id="holiday-content">
+                                    <h3 class="holiday-content__top-title">EAST nUSA TENGGARA</h3>
+                                    <h1 class="holiday-content__main-title">Have you enjoyed your holiday?</h1>
+                                    <h4 class="holiday-content__caption">
+                                        You will be amazed if you take part in this sailing Komodo island tour package.
+                                        So it is also mandatory for you, besides enjoying Komodo tourism on Komodo
+                                        Island,
+                                        you also have to taste the marine tourism.
+                                        The beautiful waters of Komodo will make you meet many travelers from other
+                                        countries.
+                                    </h4>
+                                    <button class="holiday-content__readmore-btn readmore-btn">read more</button>
+                                </div>
+                            </section>
+                            <section class="content-block__mountains mountains">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/mountains.svg" style="width:100%">
+                                            <div class="slide__body">
+                                                <h3 class="slide__top-title">Bromo</h3>
+                                                <h1 class="slide__title">Steady your steps, we will climb together!</h1>
+                                                <p class="slide__description">
+                                                    Enjoying the vast expanse of the sea of ​​​​sand, witnessing the
+                                                    splendor
+                                                    of Mount Semeru that soars into the sky, and gazing at the beauty of
+                                                    the sun moving out of its bed or otherwise enjoying the dim twilight
+                                                    from the Bromo ridge is an unforgettable experience when visiting
+                                                    Bromo.
+                                                </p>
+                                                <div class="slide__readmore-btn-container">
+                                                    <button class="readmore-btn">read more</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/lake-toba.jpg" style="width:100%">
+                                            <div class="slide__body toba-body">
+                                                <h3 class="slide__top-title">Lake Toba</h3>
+                                                <h1 class="slide__title">Steady your steps, we will embark on a journey
+                                                </h1>
+                                                <p class="slide__description">
+                                                    Lake Toba is one of the most mesmerizing natural wonders in
+                                                    Indonesia.
+                                                    Located in the northern part of Sumatra Island, it is the largest
+                                                    volcanic lake in the world. The lake was formed over 70,000 years
+                                                    ago by
+                                                    a massive volcanic eruption, which led to the creation of a caldera
+                                                    that
+                                                    is now filled with water.
+                                                </p>
+                                                <div class="slide__readmore-btn-container">
+                                                    <button class="readmore-btn">read more</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/borobudur.jpg" style="width:100%">
+                                            <div class="slide__body borobudur">
+                                                <h3 class="slide__top-title">Borobudur</h3>
+                                                <h1 class="slide__title">Borobudur: Serene magnificence, world's largest
+                                                    Buddhist temple.
+                                                </h1>
+                                                <p class="slide__description">
+                                                    Borobudur is a 9th-century Mahayana Buddhist temple in Magelang
+                                                    Regency, not far
+                                                    from the city of Magelang and the town of Muntilan, in Central Java,
+                                                    Indonesia. It is the world's largest Buddhist temple. The
+                                                    temple consists of nine stacked platforms, six square and three
+                                                    circular, topped by a central dome. It is decorated with 2,672
+                                                    relief panels and originally 504 Buddha statues.
+                                                </p>
+                                                <div class="slide__readmore-btn-container">
+                                                    <button class="readmore-btn">read more</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </section>
+                            <section class="content-block__culture culture" id="culture">
+                                <div class="culture__body culture-content" id="culture-content">
+                                    <h3 class="culture-content__top-title">INDONESIAN CULTURE</h3>
+                                    <h1 class="culture-content__title">Our culture here is very friendly to people
+                                    </h1>
+                                    <h4 class="culture-content__description">
+                                        known for his politeness, manners and gentleness.
+                                        This becomes a characteristic when they mingle
+                                        with other tribes and become basic traits that are passed down by their
+                                        ancestors.
+                                    </h4>
+                                    <button class="culture-content__readmore-btn readmore-btn">read more</button>
+                                </div>
+                                <img src="./images/culture.svg" alt="">
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <section class="footer__start footstart">
+                        <a class="footstart__logo" href="#">QWERy</a>
+                        <div class="footstart__button-block">
+                            <p class="start__ready">Ready to explore?</p>
+                            <button class="start__start-btn">Get started</button>
+                        </div>
+                    </section>
+                    <section class="footer__middle footmiddle">
+                        <div class="footmiddle__left-block left-block">
+                            <div class="left-block__title">Let's go on vacation, Make your day</div>
+                            <form class="left-block__email-form">
+                                <input class="email-input" type="email" name="email" placeholder="Email address"
+                                    multiple>
+                                <button class="email-submit-btn" type="submit">
+                                    <img src="./images/icons/footer-arrow.svg" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="footmiddle__right-block right-block">
+                            <div class="right-block__footer-columns footer-columns">
+                                <div class="footer-columns__services services-column column">
+                                    <h3>Services</h3>
+                                    <p>Email Marketing</p>
+                                    <p>Campaigns</p>
+                                    <p>Branding</p>
+                                    <p>Offline</p>
+                                </div>
+                                <div class="footer-columns__about about-column column">
+                                    <h3>About</h3>
+                                    <p>Our Story</p>
+                                    <p>Benefits</p>
+                                    <p>Team</p>
+                                    <p>Careers</p>
+                                </div>
+                                <div class="footer-columns__help help-column column">
+                                    <h3>Help</h3>
+                                    <p>FAQs</p>
+                                    <p>Contact Us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="footer__end footend">
+                        <div class="footbar__container">
+                            <div class="footend__bar footbar">
+                                <div class="footbar__customer-info customer-info">
+                                    <a class="customer-info__termsofcond" href="#">Terms & Conditions</a>
+                                    <a class="customer-info__privacy" href="#">Privacy Policy</a>
+                                </div>
+                                <div class="footbar__socials">
+                                    <a class="_icon-facebook" href="https://www.facebook.com/"></a>
+                                    <a class="_icon-twitter" href="https://twitter.com/"></a>
+                                    <a class="_icon-instagram" href="https://www.instagram.com/"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="footend__copyright">Copyright 2021 QWERy</p>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/sideslide.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
